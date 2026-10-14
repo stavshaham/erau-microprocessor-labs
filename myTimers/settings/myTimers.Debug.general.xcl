@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armlmiftdi.dll" 
+
+"C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myTimers\ewarm\Exe\myTimers.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armbat.dll" 
+
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\flashloader\TexasInstruments\FlashTC4_H6_o.board" 
+
+
+
+
