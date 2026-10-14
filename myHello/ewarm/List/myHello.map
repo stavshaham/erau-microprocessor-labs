@@ -1,0 +1,278 @@
+###############################################################################
+#
+# IAR ELF Linker V7.40.3.8902/W32 for ARM                 01/Sep/2026  14:49:03
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Exe\myHello.out
+#    Map file     =  
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\List\myHello.map
+#    Command line =  
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Obj\cfal96x64x16.o
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\grlib\ewarm\Exe\grlib.a
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Obj\myHello.o
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Obj\startup_ewarm.o
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Obj\uartstdio.o
+#        --redirect _Printf=_PrintfTiny --redirect _Scanf=_ScanfSmall -o
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Exe\myHello.out
+#        --map
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\List\myHello.map
+#        --config
+#        C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\myHello.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at start of [0x00000000-0x0003ffff] { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20007fff] { rw, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x26c
+  .intvec            const    0x00000000   0x26c  startup_ewarm.o [1]
+                            - 0x0000026c   0x26c
+
+"P1":                                     0x1bd8
+  .rodata            const    0x0000026c   0x628  fontcm12.o [5]
+  .text              ro code  0x00000894   0x59c  cfal96x64x16.o [1]
+  .text              ro code  0x00000e30   0x4ea  string.o [5]
+  .text              ro code  0x0000131c   0x2dc  uartstdio.o [1]
+  .text              ro code  0x000015f8   0x2c4  myHello.o [1]
+  .text              ro code  0x000018bc     0x6  uart.o [4]
+  .text              ro code  0x000018c4    0x78  context.o [5]
+  .text              ro code  0x0000193c   0x11a  rectangle.o [5]
+  .text              ro code  0x00001a58    0x44  sysctl.o [4]
+  .text              ro code  0x00001a9c   0x16e  gpio.o [4]
+  .text              ro code  0x00001c0a    0x90  line.o [5]
+  .text              ro code  0x00001c9a    0x2c  copy_init3.o [7]
+  .rodata            const    0x00001cc8    0x28  cfal96x64x16.o [1]
+  .text              ro code  0x00001cf0    0x28  data_init.o [7]
+  .text              ro code  0x00001d18    0x22  fpinit_M.o [6]
+  .iar.init_table    const    0x00001d3c    0x14  - Linker created -
+  .text              ro code  0x00001d50    0x1e  startup_ewarm.o [1]
+  .text              ro code  0x00001d6e     0xc  cstartup_M.o [7]
+  .text              ro code  0x00001d7c    0x1a  cmain.o [7]
+  .text              ro code  0x00001d96     0x4  low_level_init.o [3]
+  .text              ro code  0x00001d9a     0x4  exit.o [3]
+  .text              ro code  0x00001da0     0xa  cexit.o [7]
+  .text              ro code  0x00001dac    0x14  exit.o [8]
+  .rodata            const    0x00001dc0    0x14  uartstdio.o [1]
+  .rodata            const    0x00001dd4    0x10  myHello.o [1]
+  .rodata            const    0x00001de4     0xc  myHello.o [1]
+  .rodata            const    0x00001df0     0xc  myHello.o [1]
+  .rodata            const    0x00001dfc     0xc  uartstdio.o [1]
+  .rodata            const    0x00001e08     0xc  uartstdio.o [1]
+  .rodata            const    0x00001e14     0x8  uartstdio.o [1]
+  .text              ro code  0x00001e1c     0x8  charmap.o [5]
+  .rodata            const    0x00001e24     0x4  uartstdio.o [1]
+  .rodata            const    0x00001e28     0x0  copy_init3.o [7]
+  Initializer bytes  const    0x00001e28    0x1c  <for P2 s0>
+                            - 0x00001e44  0x1bd8
+
+"P2":                                      0x21c
+  P2 s0                       0x20000000    0x1c  <Init block>
+    .data            inited   0x20000000    0x14  cfal96x64x16.o [1]
+    .bss             inited   0x20000014     0x4  uartstdio.o [1]
+    .bss             inited   0x20000018     0x4  context.o [5]
+  .noinit            uninit   0x2000001c   0x200  startup_ewarm.o [1]
+                            - 0x2000021c   0x21c
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x1c:
+          0x00001e28  0x1c
+    1 destination range, total size 0x1c:
+          0x20000000  0x1c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Obj: [1]
+    cfal96x64x16.o      1 436       60       20
+    myHello.o             708       40
+    startup_ewarm.o        30      620      512
+    uartstdio.o           732       60        4
+    -------------------------------------------
+    Total:              2 906      780      536
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+driverlib.a: [4]
+    gpio.o                366
+    sysctl.o               68
+    uart.o                  6
+    -------------------------------------------
+    Total:                440
+
+grlib.a: [5]
+    charmap.o               8
+    context.o             120        4        4
+    fontcm12.o                   1 576
+    line.o                144
+    rectangle.o           282
+    string.o            1 258
+    -------------------------------------------
+    Total:              1 812    1 580        4
+
+m7M_tls.a: [6]
+    fpinit_M.o             34
+    -------------------------------------------
+    Total:                 34
+
+rt7M_tl.a: [7]
+    cexit.o                10
+    cmain.o                26
+    copy_init3.o           44
+    cstartup_M.o           12
+    data_init.o            40
+    -------------------------------------------
+    Total:                132
+
+shb_l.a: [8]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                   12        4
+    Linker created                  20
+-----------------------------------------------
+    Grand Total:        5 364    2 384      540
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00001d3c          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00001d50          --   Gb  - Linker created -
+?main                   0x00001d7d         Code  Gb  cmain.o [7]
+CFAL96x64x16ColorTranslate
+                        0x00000c85   0x18  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16Flush       0x00000c9d    0x2  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16Init        0x00000c9f  0x15a  Code  Gb  cfal96x64x16.o [1]
+CFAL96x64x16LineDrawH   0x00000af3   0xa2  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16LineDrawV   0x00000b95   0xc2  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16PixelDraw   0x00000925   0x40  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16PixelDrawMultiple
+                        0x00000965  0x18e  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16RectFill    0x00000c57   0x2e  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16WriteCommand
+                        0x00000895   0x48  Code  Lc  cfal96x64x16.o [1]
+CFAL96x64x16WriteData   0x000008dd   0x48  Code  Lc  cfal96x64x16.o [1]
+ConfigureUART           0x000015f9   0x50  Code  Gb  myHello.o [1]
+FaultISR                0x00001d6b    0x2  Code  Lc  startup_ewarm.o [1]
+GPIODirModeSet          0x00001a9d   0x28  Code  Gb  gpio.o [4]
+GPIOPadConfigSet        0x00001ac5   0xfe  Code  Gb  gpio.o [4]
+GPIOPinRead             0x00001bc3    0x6  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOInput    0x00001bd3   0x14  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOOutput   0x00001be7    0xa  Code  Gb  gpio.o [4]
+GPIOPinWrite            0x00001bc9    0x6  Code  Gb  gpio.o [4]
+GrContextFontSet        0x00001317    0x4  Code  Gb  string.o [5]
+GrContextInit           0x000018c5   0x5e  Code  Gb  context.o [5]
+GrDefaultStringRenderer
+                        0x00000eb1   0xb2  Code  Gb  string.o [5]
+GrFontBaselineGet       0x00001209   0x18  Code  Gb  string.o [5]
+GrFontCodepageGet       0x000012bb   0x1c  Code  Gb  string.o [5]
+GrFontGlyphDataGet      0x00001237   0x84  Code  Gb  string.o [5]
+GrFontGlyphRender       0x00000f93  0x21e  Code  Gb  string.o [5]
+GrFontInfoGet           0x000011df   0x2a  Code  Gb  string.o [5]
+GrLineDrawH             0x00001c0b   0x48  Code  Gb  line.o [5]
+GrLineDrawV             0x00001c53   0x48  Code  Gb  line.o [5]
+GrMapISO8859_1_Unicode  0x00001e1d    0x8  Code  Gb  charmap.o [5]
+GrRectDraw              0x0000193d   0x68  Code  Gb  rectangle.o [5]
+GrRectFill              0x000019a5   0xb2  Code  Gb  rectangle.o [5]
+GrStringDraw            0x00000e9b   0x16  Code  Gb  string.o [5]
+GrStringNextCharGet     0x00000f63   0x30  Code  Gb  string.o [5]
+GrStringWidthGet        0x00000e31   0x6a  Code  Gb  string.o [5]
+IntDefaultHandler       0x00001d6d    0x2  Code  Lc  startup_ewarm.o [1]
+NmiSR                   0x00001d69    0x2  Code  Lc  startup_ewarm.o [1]
+Region$$Table$$Base     0x00001d3c          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00001d50          --   Gb  - Linker created -
+ResetISR                0x00001d51   0x14  Code  Gb  startup_ewarm.o [1]
+SysCtlPeripheralEnable  0x00001a79    0x8  Code  Gb  sysctl.o [4]
+SysCtlPeripheralReady   0x00001a59    0x8  Code  Gb  sysctl.o [4]
+UARTClockSourceSet      0x000018bd    0x6  Code  Gb  uart.o [4]
+UARTStdioConfig         0x0000131d   0x56  Code  Gb  uartstdio.o [1]
+UARTprintf              0x000015e1   0x18  Code  Gb  uartstdio.o [1]
+UARTvprintf             0x000013ab  0x214  Code  Gb  uartstdio.o [1]
+UARTwrite               0x00001373   0x38  Code  Gb  uartstdio.o [1]
+UpdateContextCharMapping
+                        0x000012d7   0x40  Code  Lc  string.o [5]
+__cmain                 0x00001d7d         Code  Gb  cmain.o [7]
+__exit                  0x00001dad   0x14  Code  Gb  exit.o [8]
+__iar_copy_init3        0x00001c9b   0x2c  Code  Gb  copy_init3.o [7]
+__iar_data_init3        0x00001cf1   0x28  Code  Gb  data_init.o [7]
+__iar_init_vfp          0x00001d19         Code  Gb  fpinit_M.o [6]
+__iar_program_start     0x00001d6f         Code  Gb  cstartup_M.o [7]
+__low_level_init        0x00001d97    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000  0x26c  Data  Gb  startup_ewarm.o [1]
+_call_main              0x00001d89         Code  Gb  cmain.o [7]
+_exit                   0x00001da1         Code  Gb  cexit.o [7]
+_main                   0x00001d93         Code  Gb  cmain.o [7]
+exit                    0x00001d9b    0x4  Code  Gb  exit.o [3]
+g_pcHex                 0x00001e24    0x4  Data  Lc  uartstdio.o [1]
+g_psDefaultCodePointMapTable
+                        0x0000192c   0x10  Data  Gb  context.o [5]
+g_psGrLibDefaults       0x20000018    0x4  Data  Lc  context.o [5]
+g_pui8Cm12Data          0x0000026c  0x560  Data  Lc  fontcm12.o [5]
+g_sCFAL96x64x16         0x00001cc8   0x28  Data  Gb  cfal96x64x16.o [1]
+g_sFontCm12             0x000007cc   0xc8  Data  Gb  fontcm12.o [5]
+g_ui32Base              0x20000014    0x4  Data  Lc  uartstdio.o [1]
+g_ui32UARTBase          0x00001dfc    0xc  Data  Lc  uartstdio.o [1]
+g_ui32UARTPeriph        0x00001e08    0xc  Data  Lc  uartstdio.o [1]
+g_ui8DisplayInitCommands
+                        0x20000000   0x14  Data  Lc  cfal96x64x16.o [1]
+main                    0x00001649  0x222  Code  Gb  myHello.o [1]
+pui32Stack              0x2000001c  0x200  Data  Lc  startup_ewarm.o [1]
+
+
+[1] = C:\Users\shahams\Desktop\TivaWare_C_Series-2.1.4.178\examples\boards\dk-tm4c123g\myHello\ewarm\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = driverlib.a
+[5] = grlib.a
+[6] = m7M_tls.a
+[7] = rt7M_tl.a
+[8] = shb_l.a
+
+  5 364 bytes of readonly  code memory
+  2 384 bytes of readonly  data memory
+    540 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
