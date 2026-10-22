@@ -24,6 +24,7 @@ The projects focus on low-level programming, register-level configuration, and p
 ├── my_uart_echo/             # Lab 2 - Serial communication and baud rate configuration
 ├── my_ADC_lab3/              # Lab 3 - Analog signal sampling and conversion
 ├── myTimers/                 # Lab 4 - Hardware timer configuration and ISR handling
+├── myTimersAssembly/         # Lab 5 - Hardware timer configuration and ISR handling using assembly
 └── common/                   # Shared header files, startup files, and driver libraries
 ```
 
@@ -45,6 +46,9 @@ The projects focus on low-level programming, register-level configuration, and p
 * **Objective:** Implement General-Purpose Timer blocks to generate precise time delays and service asynchronous events via Interrupt Service Routines (ISRs).
 * **Key Concepts:** Periodic timer mode, reload registers, NVIC (Nested Vectored Interrupt Controller) configuration, and ISR priority.
 
+### Lab 5: Assembly Language (ISR)
+* **Objective:** Optimizing the ISR from Lab 4 using assembly, and getting rid of branching, MOVS, and ADDS.
+* **Key Concepts:** Implement assembly knowledge learned in class on a microcontroller.
 ## 🚀 Getting Started
 
 ### Prerequisites
